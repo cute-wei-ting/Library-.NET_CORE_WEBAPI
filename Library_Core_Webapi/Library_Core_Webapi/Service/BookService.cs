@@ -18,6 +18,11 @@ namespace Library_Core_Webapi.Service
 		{
 			_config = config;
 		}
+
+		public BookService()
+		{
+		}
+
 		private string GetDBConnectionString()
 		{
 			return _config.GetConnectionString("MyConnectionString");
